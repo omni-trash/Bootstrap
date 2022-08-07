@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Grid</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../lib/bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            :root {
+                font-size: 11pt;
+            }
+
+            body {
+                background-color: blanchedalmond;
+            }
+
+            .container {
+                background-color: rgb(229, 244, 225);
+            }
+
+            .col-12,
+            .col-11,
+            .col-10,
+            .col-9,
+            .col-8,
+            .col-7,
+            .col-6 {
+                background-color: oldlace;
+                border: thin solid gray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1><a href="https://getbootstrap.com/docs/5.0/layout/grid/#nesting">Nested Grid</a></h1>
+
+            <p class="lead">
+                Columns in Realation to the Parent
+           </p>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-12">
+                    col-12
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-11">
+                    col-11
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-10">
+                    col-10
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-9">
+                    col-9
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-8">
+                    col-8
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-7">
+                    col-7
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-6">
+                    col-6
+                    <div class="row">
+                        <div class="col-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>With Offset</h2>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-12">
+                    col-12
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-11 offset-1">
+                    col-11
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-10 offset-2">
+                    col-10
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-9 offset-3">
+                    col-9
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-8 offset-4">
+                    col-8
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-7 offset-5">
+                    col-7
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="row">
+                <div class="col-6 offset-6">
+                    col-6
+                    <div class="row">
+                        <div class="col-6 offset-6">
+                            col-6
+                            <div class="row">
+                                <div class="col-6 offset-6">
+                                    col-6
+                                    <div class="row">
+                                        <div class="col-6 offset-6">
+                                            col-6
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

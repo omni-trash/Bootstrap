@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 11pt;
+    height: 100%;
+}
+
+:root {
+    --main-background-color: #e74c3c;
+    --main-color: #ecf0f1;
+    --active-background-color: #c0392b;
+    --active-color: #ffbbbc;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "content"
+    "footer";
+    grid-template-rows: 1fr 60px;
+}
+
+#content {
+    grid-area: content;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+#footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    display: table;
+}
+
+#footer p {
+    display: table-cell;
+    vertical-align: middle;
+}

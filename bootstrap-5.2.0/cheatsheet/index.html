@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Cheat Sheet</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../lib/bootstrap-5.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../lib/bootstrap-icons-1.9.0/bootstrap-icons.css" rel="stylesheet">
+        <style>
+            body {
+                background-color: #f4f4f4;
+            }
+
+            header {
+                padding: .5rem .5rem;
+                background-color: #333;
+                color: #eee;
+            }
+
+            section {
+                border-top: 4px solid darkmagenta;
+                padding: .5em 0;
+            }
+
+            section:first-child {
+                border: none;
+            }
+
+            .note {
+                border: thin solid wheat;
+                border-left-width: 4px;
+                background-color: rgb(255, 249, 241);
+                padding: 8px;
+                font-family: monospace;
+            }
+
+            h1 small {
+                font-size: 60%;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="position-fixed fixed-bottom px-1" style="background-color: wheat;">
+            Bootstrap 5.2.0
+        </div>
+
+        <header>
+            <div class="container">
+                <h1>Cheat Sheet <small class="text-muted">Bootstrap 5.2.0</small></h1>
+            </div>
+        </header>
+
+        <div class="container" style="border: thin solid silver; background-color: #fff;">
+            <section>
+                <h3>Typography</h3>
+
+                <p class="note">
+                    h1, h2, h3, h4, h5, h6
+                </p>
+
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+
+                <p class="note">
+                    h1.border-bottom.pb-2.mb-3, small.text-muted
+                </p>
+
+                <h1 class="border-bottom pb-2 mb-3">Hello World! <small class="text-muted">Secondary text</small></h1>
+
+                <p class="note">
+                    p.lead
+                </p>
+
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et
+                    dolore
+                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd
+                </p>
+
+                <p class="note">
+                    p
+                </p>
+
+                <p>
+                    <mark>Lorem ipsum dolor sit amet</mark>, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                    invidunt ut
+                    labore et dolore
+                    magna aliquyam erat, <del>sed diam voluptua</del>. At vero eos et accusam et justo duo dolores et ea
+                    rebum. Stet
+                    clita kasd
+                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+                    consetetur
+                    sadipscing
+                    elitr, <u>sed diam nonumy eirmod</u> tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                    diam voluptua.
+                    At vero
+                    eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                    est Lorem
+                    ipsum
+                    dolor sit amet.
+                </p>
+            </section>
+
+            <section>
+                <h3>Alignment & Transformation</h3>
+
+                <p class="note">
+                    <s>text-left, text-right, text-justify</s>
+                </p>
+
+                <p class="note">
+                    text-start, text-center, text-end, text-lowercase, text-uppercase, text-capitalize
+                </p>
+
+                <p class="text-start text-lowercase">Left aligned text (text-start text-lowercase)</p>
+                <p class="text-center text-uppercase">Center aligned text (text-center text-uppercase)</p>
+                <p class="text-end text-capitalize">Right aligned text (text-end text-capitalize)</p>
+                <p class="text-nowrap">No wrap text (text-nowrap)</p>
+            </section>
+
+            <section>
+                <h3>Font weight and italics</h3>
+
+                <p class="note">
+                    <s>font-weight-bold, font-weight-normal, font-weight-light, font-italic</s>
+                </p>
+
+                <p class="note">
+                    fw-bold, fw-normal, fw-light, fst-italic
+                </p>
+
+                <p class="fw-bold">Bold text.</p>
+                <p class="fw-normal">Normal weight text.</p>
+                <p class="fw-light">Light weight text.</p>
+                <p class="fst-italic">Italic text.</p>
+            </section>
+
+            <section>
+                <h3>Quick Floats</h3>
+
+                <p class="note">
+                    <s>float-right, float-left</s>
+                </p>
+
+                <p class="note">
+                    float-end, float-start
+                </p>
+
+                <div class="float-end">Div floated to right (float-end)</div>
+                <div class="float-start">Div floated to left (float-start)</div>
+                <div class="clearfix"></div>
+
+                <p class="note">
+                    div.clearfix after floated block elements
+                </p>
+            </section>
+
+            <section>
+                <h3>Blockquote</h3>
+
+                <p class="note">
+                    <s>blockquote.blockquote.border-left.pl-3, footer.blockquote-footer</s>
+                </p>
+
+                <p class="note">
+                    blockquote.border-start.border-4.ps-3, footer.blockquote-footer.mt-1
+                </p>
+
+                <blockquote class="blockquote border-start border-4 ps-3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et
+                        dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita
+                        kasd
+                    </p>
+                    <footer class="blockquote-footer mt-1">Quote by <cite title="John Doe">John Doe</cite></footer>
+                </blockquote>
+
+                <p class="note">
+                    <s>blockquote.blockquote.text-right.border-right.pr-3, footer.blockquote-footer</s>
+                </p>
+
+                <p class="note">
+                    blockquote.blockquote.text-end.border-end.border-4.pe-3, footer.blockquote-footer.mt-1
+                </p>
+
+                <blockquote class="blockquote text-end border-end border-4 pe-3">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et
+                        dolore
+                        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita
+                        kasd
+                    </p>
+                    <footer class="blockquote-footer mt-1">Quote by <cite title="John Doe">John Doe</cite></footer>
+                </blockquote>
+            </section>
+
+            <section>
+                <h3>Lists</h3>
+
+                <p class="note">
+                    ul.list-unstyled
+                </p>
+
+                <ul class="list-unstyled">
+                    <li>Item One</li>
+                    <li>Item Two</li>
+                    <li>Item Three</li>
+                    <li>Item Four</li>
+                </ul>
+
+                <p class="note">
+                    ul.list-inline, li.list-inline-item
+                </p>
+
+                <ul class="list-inline">
+                    <li class="list-inline-item">Item One</li>
+                    <li class="list-inline-item">Item Two</li>
+                    <li class="list-inline-item">Item Three</li>
+                    <li class="list-inline-item">Item Four</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Code</h3>
+
+                <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+                <br>
+                Change directory with <kbd>cd</kbd>
+                <br>
+                To edit settings, press <kbd>ctrl + ,</kbd>
+            </section>
+
+            <section>
+                <h3>Contextual Colors</h3>
+
+                <p class="text-primary">Hello World (text-primary)</p>
+                <p class="text-secondary">Hello World (text-secondary)</p>
+                <p class="text-success">Hello World (text-success)</p>
+                <p class="text-info">Hello World (text-info)</p>
+                <p class="text-warning">Hello World (text-warning)</p>
+                <p class="text-danger">Hello World (text-danger)</p>
+                <p class="text-muted">Hello World (text-muted)</p>
+                <p class="text-light bg-dark">Hello World (text-light</p>
+                <p class="text-dark">Hello World (text-dark)</p>
+                <p class="text-white bg-dark">Hello World (text-white)</p>
+                <p class="text-black-50">Hello World (text-black-50)</p>
+                <p class="text-white-50 bg-dark">Hello World (text-white-50)</p>
+            </section>
+
+            <section>
+                <h3>Contextual Background Colors</h3>
+
+                <p class="bg-primary">Hello World (bg-primary)</p>
+                <p class="bg-secondary">Hello World (bg-secondary)</p>
+                <p class="bg-success">Hello World (bg-success)</p>
+                <p class="bg-info">Hello World (bg-info)</p>
+                <p class="bg-warning">Hello World (bg-warning)</p>
+                <p class="bg-danger">Hello World (bg-danger)</p>
+                <p class="bg-light">Hello World (bg-light)</p>
+                <p class="bg-dark text-light">Hello World (bg-dark)</p>
+                <p class="bg-white">Hello World (bg-white)</p>
+                <p class="bg-transparent">Hello World (bg-transparent)</p>
+            </section>
+
+            <section>
+                <h3>Background Gradient</h3>
+
+                <div class="bg-primary p-2 bg-gradient">Hello World (bg-primary bg-gradient)</div>
+                <div class="bg-secondary p-2 bg-gradient">Hello World (bg-secondary bg-gradient)</div>
+                <div class="bg-success p-2 bg-gradient">Hello World (bg-success bg-gradient)</div>
+                <div class="bg-info p-2 bg-gradient">Hello World (bg-info bg-gradient)</div>
+                <div class="bg-warning p-2 bg-gradient">Hello World (bg-warning bg-gradient)</div>
+                <div class="bg-danger p-2 bg-gradient">Hello World (bg-danger bg-gradient)</div>
+                <div class="bg-light p-2 bg-gradient">Hello World (bg-light bg-gradient)</div>
+                <div class="bg-dark text-light p-2 bg-gradient">Hello World (bg-dark bg-gradient)</div>
+            </section>
+
+            <section>
+                <h3>Color & Background</h3>
+
+                <p class="note">
+                    text-bg-{primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <div class="text-bg-primary p-3">Primary with contrasting color</div>
+                <div class="text-bg-secondary p-3">Secondary with contrasting color</div>
+                <div class="text-bg-success p-3">Success with contrasting color</div>
+                <div class="text-bg-danger p-3">Danger with contrasting color</div>
+                <div class="text-bg-warning p-3">Warning with contrasting color</div>
+                <div class="text-bg-info p-3">Info with contrasting color</div>
+                <div class="text-bg-light p-3">Light with contrasting color</div>
+                <div class="text-bg-dark p-3">Dark with contrasting color</div>
+            </section>
+
+            <section>
+                <h3>Background Opacity</h3>
+
+                <p class="note">
+                    bg-opacity-75, bg-opacity-50, bg-opacity-25, bg-opacity-10
+                </p>
+
+                <p class="note">
+                    style="--bs-bg-opacity: .85"
+                </p>
+
+                <div class="bg-success p-2 text-white">This is default success background</div>
+                <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+                <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+            </section>
+
+            <section>
+                <h3>Buttons</h3>
+
+                <p class="note">
+                    button.btn.btn-outline-secondary, a.btn.btn-outline-secondary, input.btn.btn-outline-secondary
+                </p>
+
+                <button class="btn btn-outline-secondary">Button</button>
+                <a href="#" class="btn btn-outline-secondary">Link</a>
+                <input type="submit" class="btn btn-outline-secondary" value="Submit">
+            </section>
+
+            <section>
+                <h3>Contextual Buttons</h3>
+
+                <p class="note">
+                    btn.btn-{primary, secondary, success, info, warning, danger, light, dark, link}
+                </p>
+
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-light">Light</button>
+                <button class="btn btn-dark">Dark</button>
+                <button class="btn btn-link">Link</button>
+            </section>
+
+            <section>
+                <h3>Contextual Buttons (disabled)</h3>
+
+                <button class="btn btn-primary" disabled>Primary</button>
+                <button class="btn btn-secondary" disabled>Secondary</button>
+                <button class="btn btn-success" disabled>Success</button>
+                <button class="btn btn-info" disabled>Info</button>
+                <button class="btn btn-warning" disabled>Warning</button>
+                <button class="btn btn-danger" disabled>Danger</button>
+                <button class="btn btn-light" disabled>Light</button>
+                <button class="btn btn-dark" disabled>Dark</button>
+                <button class="btn btn-link" disabled>Link</button>
+            </section>
+
+            <section>
+                <h3>Contextual Outline Buttons</h3>
+
+                <p class="note">
+                    btn.btn-outline-{primary, secondary, success, info, warning, danger, light, dark}
+                </p>
+
+                <button class="btn btn-outline-primary">Primary</button>
+                <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-outline-success">Success</button>
+                <button class="btn btn-outline-info">Info</button>
+                <button class="btn btn-outline-warning">Warning</button>
+                <button class="btn btn-outline-danger">Danger</button>
+                <button class="btn btn-outline-light">Light</button>
+                <button class="btn btn-outline-dark">Dark</button>
+            </section>
+
+            <section>
+                <h3>Contextual Outline Buttons (disabled)</h3>
+
+                <button class="btn btn-outline-primary" disabled>Primary</button>
+                <button class="btn btn-outline-secondary" disabled>Secondary</button>
+                <button class="btn btn-outline-success" disabled>Success</button>
+                <button class="btn btn-outline-info" disabled>Info</button>
+                <button class="btn btn-outline-warning" disabled>Warning</button>
+                <button class="btn btn-outline-danger" disabled>Danger</button>
+                <button class="btn btn-outline-light" disabled>Light</button>
+                <button class="btn btn-outline-dark" disabled>Dark</button>
+            </section>
+
+            <section>
+                <h3>Button Sizes</h3>
+
+                <p class="note">
+                    btn.btn-lg, btn, btn.btn-sm
+                </p>
+
+                <button class="btn btn-secondary btn-lg">Button (btn-lg)</button>
+                <button class="btn btn-secondary">Button (btn)</button>
+                <button class="btn btn-secondary btn-sm">Button (btn-sm)</button>
+            </section>
+
+            <section>
+                <h3>Radio Buttons</h3>
+
+                <p class="note">
+                    btn-group, input.btn-check
+                </p>
+
+                <div class="btn-group">
+                    <input type="radio" class="btn-check" id="a" name="options" checked>
+                    <label class="btn btn-outline-primary" for="a">Active</label>
+
+                    <input type="radio" class="btn-check" id="b" name="options">
+                    <label class="btn btn-outline-primary" for="b"> Radio</label>
+
+                    <input type="radio" class="btn-check" id="c" name="options">
+                    <label class="btn btn-outline-primary" for="c">Radio</label>
+                </div>
+            </section>
+
+            <section>
+                <h3>Button Dropdown</h3>
+
+                <p class="note">
+                    .dropdown, .dropdown-toggle .dropdown-menu, .dropdown-item, .dropdown-divider
+                </p>
+
+                <p class="note">
+                    <s>data-toggle</s>, data-bs-toggle
+                </p>
+
+                <div class="dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                        Button <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">One</a>
+                        <a class="dropdown-item" href="#">Two</a>
+                        <a class="dropdown-item" href="#">Three</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Hello</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Split Button Dropdown</h3>
+
+                <p class="note">
+                    .btn-group, .dropdown-toggle-split
+                </p>
+
+                <p class="note">
+                    <s>data-toggle</s>, data-bs-toggle
+                </p>
+
+                <div class="btn-group">
+                    <button class="btn btn-primary">Button</button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"></button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">One</a>
+                        <a class="dropdown-item" href="#">Two</a>
+                        <a class="dropdown-item" href="#">Three</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Hello</a>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Switches</h3>
+
+                <p class="note">
+                    div.form-check.form-switch, input.form-check-input
+                </p>
+
+                <div class="form-check form-switch">
+                    <label>
+                        <input class="form-check-input" type="checkbox" checked>
+                        Check me out
+                    </label>
+                </div>
+
+                <p class="note">
+                    div.form-check, input.form-check-input
+                </p>
+
+                <div class="form-check">
+                    <label>
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h3>Forms</h3>
+
+                <form>
+                    <p class="note">
+                        <s>div.form-group</s>, div.mb-3, *.form-control, label.form-label
+                    </p>
+
+                    <p class="note">
+                        <s>select.form-control</s>, select.form-select
+                    </p>
+
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control" placeholder="Add Email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea type="text" class="form-control" placeholder="Add Message"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <select class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <p class="note">
+                        <s>input.form-control-file</s>, input.form-control, p.form-text.text-muted, label.form-label
+                    </p>
+
+                    <div class="mb-3">
+                        <label class="form-label">Upload File</label>
+                        <input type="file" class="form-control">
+                        <p class="form-text text-muted">
+                            Only png and jpg allowed
+                        </p>
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h3>Inline Forms</h3>
+
+                <p class="note">
+                    <s>form.form-inline, div.form-group</s>
+                </p>
+
+                <p class="note">
+                    form.d-flex.flex-wrap.align-items-center,
+                    div.d-flex.align-items-center
+                </p>
+
+                <form class="d-flex flex-wrap align-items-center">
+                    <div class="d-flex align-items-center">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Add Email">
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <label>Message</label>
+                        <textarea type="text" class="form-control" placeholder="Add Message"></textarea>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <label>Gender</label>
+                        <select class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Upload File</label>
+                        <input type="file" class="form-control">
+                        <p class="form-text text-muted">
+                            Only png and jpg allowed
+                        </p>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="checkbox" class="form-check-input"> Check me out
+                        </label>
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h3>Form Sizing</h3>
+
+                <input class="my-2 form-control form-control-lg" placeholder=".form-control.form-control-lg"></input>
+                <input class="my-2 form-control form-control" placeholder=".form-control"></input>
+                <input class="my-2 form-control form-control-sm" placeholder=".form-control.form-control-sm"></input>
+            </section>
+
+            <section>
+                <h3>Form Row</h3>
+
+                <p class="note">
+                    <s>.from-row, .col.form-group</s>
+                </p>
+
+                <p class="note">
+                    div.row.bm-3.g-2, div.col
+                </p>
+
+                <p class="note">
+                    label.form-label, input.form-control, p.form-text.text-muted.ms-4
+                </p>
+
+                <div class="row mb-3 g-2">
+                    <div class="col">
+                        <label class="form-label">Email</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Password</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label class="form-label">
+                            <input type="checkbox" class="form-check-input"> Check me out
+                        </label>
+
+                        <p class="form-text text-muted ms-4">
+                            Help text should be explicitly associated with the form control it relates to
+                        </p>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </section>
+
+            <section>
+                <h3>Horizontal Form</h3>
+
+                <p class="note">
+                    <s>.row.form-group, .col.col-form-label</s>
+                </p>
+
+                <p class="note">
+                    div.row.mb-3,
+                    label.col-sm-2.col-form-label,
+                    div.col-sm-10
+                </p>
+
+                <form>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="offset-sm-2 col-sm-10">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input"> Check me out
+                                </label>
+
+                                <p class="form-text text-muted">
+                                    Help text should be explicitly associated with the form control it relates to
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="offset-sm-2 col-sm-10">
+                            <button type="Button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h3>Input Groups</h3>
+
+                <p class="note">
+                    div.input-group, <s>div.input-group-append, div.input-group-prepend</s>, span.input-group-text
+                </p>
+
+                <div class="input-group">
+                    <input class="form-control text-end" value="125,20"></input>
+                    <span class="input-group-text">€</span>
+                </div>
+
+                <br>
+
+                <div class="input-group">
+                    <span class="input-group-text">€</span>
+                    <input class="form-control" value="125,20"></input>
+                </div>
+
+                <br>
+
+                <div class="input-group">
+                    <input class="form-control" placeholder="Search for..."></input>
+                    <button class="btn btn-primary">Clear</button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Breadcrumb</h3>
+
+                <p class="note">
+                    <s>ol.breadcrumb</s>, li.breadcrumb-item, li.active
+                </p>
+
+                <p class="note">
+                    ol.breadcrumb.p-2,
+                    style="background: var(--bs-gray-200)"
+                </p>
+
+                <ol class="breadcrumb p-2" style="background: var(--bs-gray-200)">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active">Data</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Tables</h3>
+
+                <p class="note">
+                    table table-striped table-bordered table-hover table-sm
+                </p>
+
+                <p class="note">
+                    tr.table-{active, primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <table class="table table-striped table-bordered table-hover table-sm">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>24</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>24</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>34</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>24</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>34</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h3>List Groups</h3>
+
+                <p class="note">
+                    ul.list-group, li.list-group-item
+                </p>
+
+                <ul class="list-group">
+                    <li class="list-group-item">Item One</li>
+                    <li class="list-group-item active">Item Two (active)</li>
+                    <li class="list-group-item">Item Three</li>
+                    <li class="list-group-item">Item Four</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>List Group Hyperlinks</h3>
+
+                <p class="note">
+                    div.list-group, a.list-group-item.list-group-item-action
+                </p>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Item One (active)</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item Two</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Item Three
+                        (list-group-item-success)</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled">Item Four (disabled)</a>
+                </div>
+            </section>
+
+            <section>
+                <h3>List Group Contextual Classes</h3>
+
+                <ul class="list-group">
+                    <li class="list-group-item">list-group-item</li>
+                    <li class="list-group-item list-group-item-primary">list-group-item list-group-item-primary</li>
+                    <li class="list-group-item list-group-item-secondary">list-group-item list-group-item-secondary</li>
+                    <li class="list-group-item list-group-item-success">list-group-item list-group-item-success</li>
+                    <li class="list-group-item list-group-item-danger">list-group-item list-group-item-danger</li>
+                    <li class="list-group-item list-group-item-warning">list-group-item list-group-item-warning</li>
+                    <li class="list-group-item list-group-item-info">list-group-item list-group-item-info</li>
+                    <li class="list-group-item list-group-item-light">list-group-item list-group-item-light</li>
+                    <li class="list-group-item list-group-item-dark">list-group-item list-group-item-dark</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>List Group Custom Content</h3>
+
+                <p class="note">
+                    div.list-group, a.list-group-item.list-group-item-action
+                </p>
+
+                <p class="note">
+                    <s>list-group-item-heading, list-group-item-text</s>
+                </p>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <h4>List group item heading (active)</h4>
+                        <p>Add nearly any HTML within, even for linked list groups like the
+                            one below.
+                        </p>
+                        <small>
+                            footnote here
+                        </small>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <h4>List group item heading</h4>
+                        <p>Add nearly any HTML within, even for linked list groups like the
+                            one below.
+                        </p>
+                        <small class="text-muted">
+                            footnote here
+                        </small>
+                    </a>
+                </div>
+            </section>
+
+            <section>
+                <h3><s>Panels</s></h3>
+
+                <p class="note">
+                    <s>div.panel-heading + h3.panel-title, div.panel-body, div.panel-footer</s>
+                </p>
+
+                <h3>Cards</h3>
+
+                <p class="note">
+                    div.card, h5.card-header, div.card-body, h5.card-title, p.card-text, div.card-footer
+                </p>
+
+                <p class="note">
+                    div.card.border-{primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <p class="note">
+                    div.card-body.text-{primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <div class="card">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-primary">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-secondary">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-success">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-success">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-danger">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-dannger">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-warning">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-warning">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-info">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-light">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="card border-dark">
+                            <h5 class="card-header">
+                                Featured
+                            </h5>
+                            <div class="card-body text-dark">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, beatae.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Card Footer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3><s>Wells</s></h3>
+
+                <p class="note">
+                    <s>div.well, div.well-lg, div.well-sm</s>
+                </p>
+
+                <div class="bg-light border rounded p-3">div.bg-light.border.rounded.p-3</div>
+            </section>
+
+            <section>
+                <h3>Alerts</h3>
+
+                <div class="alert alert-primary">div.alert.alert-primary</div>
+                <div class="alert alert-secondary">div.alert.alert-secondary</div>
+                <div class="alert alert-success">div.alert.alert-success</div>
+                <div class="alert alert-info">div.alert.alert-info</div>
+                <div class="alert alert-warning">div.alert.alert-warning</div>
+                <div class="alert alert-danger">div.alert.alert-danger</div>
+                <div class="alert alert-light">div.alert.alert-light</div>
+                <div class="alert alert-dark">div.alert.alert-dark</div>
+
+                <p class="note">
+                    div.alert.alert-warning.alert-dismissible.fade.show, button.close[data-dismiss=alert]
+                </p>
+
+                <p class="note">
+                    <s>button.close, data-dismiss="alert"</s>
+                </p>
+
+                <p class="note">
+                    button.btn-close, data-bs-dismiss="alert"
+                </p>
+
+                <div class="alert alert-warning alert-dismissible fade show">
+                    You can close this alert
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            </section>
+
+            <section>
+                <h3>Alert Additional Content</h3>
+
+                <p class="note">
+                    div.alert.alert-success, h4.alert-heading
+                </p>
+
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
+                        bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                    <hr>
+                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Progress Bar</h3>
+
+                <p class="note">
+                    div.progress, div.progress-bar.bg-success.progress-bar-striped.progress-bar-animated
+                </p>
+
+                <p class="note">
+                    no animation...
+                </p>
+
+                <div class="progress">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 60%">
+                        60%
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3><s>Labels</s></h3>
+                <h3>Badges</h3>
+
+                <p class="note">
+                    <s>span.badge.badge-{primary, secondary, success, danger, warning, info, light, dark}</s>
+                </p>
+
+                <p class="note">
+                    span.badge.text-bg-{primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-secondary">Secondary</span>
+                <span class="badge text-bg-success">Success</span>
+                <span class="badge text-bg-danger">Danger</span>
+                <span class="badge text-bg-warning">Warning</span>
+                <span class="badge text-bg-info">Info</span>
+                <span class="badge text-bg-light">Light</span>
+                <span class="badge text-bg-dark">Dark</span>
+            </section>
+
+            <section>
+                <h3>Pill Badges</h3>
+
+                <p class="note">
+                    <s>span.badge.badge-pill</s>
+                </p>
+
+                <p class="note">
+                    span.badge.rounded-pill.text-bg-{primary, secondary, success, danger, warning, info, light, dark}
+                </p>
+
+                <p class="note">
+                    span.badge.rounded-pill.text-primary.bg-light
+                </p>
+
+                <a href="#">Inbox <span class="badge rounded-pill text-bg-secondary">50</span></a>
+
+                <button class="btn btn-primary" type="button">
+                    Messages <span class="badge rounded-pill bg-light text-primary">2</span>
+                </button>
+            </section>
+
+            <section>
+                <h3>Images</h3>
+
+                <p class="note">
+                    img.thumbnail, img.rounded, img.rounded-circle
+                </p>
+
+                <img src="image.jpg" width="100" class="img-thumbnail">
+                <img src="image.jpg" width="100" class="rounded">
+                <img src="image.jpg" width="100" class="rounded-circle">
+            </section>
+
+            <section>
+                <h3>Grids (12 COLS)</h3>
+
+                <p class="note">
+                    div.row, div.col-md-8
+                </p>
+
+                <ul>
+                    <li>you can define column width for each breakpoint ( <code>col-{breakpoint}-{width-num-cols}</code>
+                        )</li>
+                    <li><code>class="col-md-8 col-lg-6 col-sm-12"</code></li>
+                </ul>
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut
+                            labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+                            rebum. Stet
+                            clita kasd
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                    <div class="col-md-1">Box</div>
+                </div>
+            </section>
+
+            <section>
+                <h3><s>Glyphicons</s></h3>
+                <h3>Bootstrap Icons</h3>
+
+                <p class="note">
+                    bi.search, bi-gear-fill, bi-house-fill
+                </p>
+
+                <h1>
+                    <span class="bi-search"></span>
+                    <span class="bi-gear-fill"></span>
+                    <span class="bi-house-fill"></span>
+                </h1>
+            </section>
+
+            <section>
+                <h3>Navigation Bar</h3>
+
+                <p class="note">
+                    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                </p>
+
+                <p class="note">
+                    ul.navbar-nav, li.nav-item, a.nav-link
+                </p>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Brand</a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">One</a>
+                                        <a class="dropdown-item" href="#">Two</a>
+                                        <a class="dropdown-item" href="#">Three</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Hello</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">One</a>
+                                        <a class="dropdown-item" href="#">Two</a>
+                                        <a class="dropdown-item" href="#">Three</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Hello</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <section>
+                <h3><s>Jumbotron</s></h3>
+
+                <p class="note">
+                    <s>div.jumbotron</s>, h.display-4, p.lead
+                </p>
+
+                <p class="note">
+                    div.px-4.py-5.rounded-3.mb-5,
+                    style="background: var(--bs-gray-200)"
+                </p>
+
+                <div class="px-4 py-5 rounded-3 mb-5" style="background: var(--bs-gray-200)">
+                    <h1 class="display-4">Welcome to my Website</h1>
+                    <p class="lead">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum earum deserunt dolorem?
+                        Exercitationem
+                        accusamus natus ratione consectetur earum tempora perspiciatis.
+                    </p>
+                    <hr>
+                    <p>
+                        It uses utility classes for typography and spacing to space content out within the larger
+                        container.
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg">Read More</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Bootstrap core JavaScrip -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../lib/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
